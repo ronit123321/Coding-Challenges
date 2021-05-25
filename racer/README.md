@@ -1,13 +1,10 @@
-# React Coding Challenge ![easy]
+# React Coding Challenge [easy]
 
 &nbsp;
 
 ## Goals / Outcomes ✨
-- To test basic understanding of render lifecycles in both functional components
-
-&nbsp;
-## Pre-requisites ✅
-None
+- Evaluate lifecycle of react component
+- Clean Code Practices
 
 &nbsp;
 ## Requirements
