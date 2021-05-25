@@ -1,8 +1,12 @@
 import React from "react";
 import "../styles/_racer.scss";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Racer = () => {
-  console.log("re rendering component");
+  const notify = () => toast("re rendering component !!");
+
+  notify();
 
   const renderMountains = () => {
     return (
@@ -61,7 +65,18 @@ const Racer = () => {
   );
 
   return (
-    <>
+    <div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5}
+        hideProgressBar
+        newestOnTop
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+      />
       <section id="griddy-section">
         <div className="grid-sky"></div>
 
@@ -79,7 +94,7 @@ const Racer = () => {
 
         <div className="grid-ground"></div>
       </section>
-    </>
+    </div>
   );
 };
 
